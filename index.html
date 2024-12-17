@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="luckyLuke.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=featured_seasonal_and_gifts">
+    <title>LuckyLuke</title>
 </head>
+
 <body>
-    
+
+    <!-- Header avec image de presentation et navigation -->
+
+    <header id="header" class="border__bottom">
+        <div class="header__title">
+            <h1>Lucky Luke</h1>
+            <figure>
+                <img src="/images/portrait.jpg" class="header__image" alt="profil de luckyluke">
+                <figcaption>L'homme le plus rapide de l'ouest...!</figcaption>
+            </figure>
+        </div>
+        <div class="header__nav">
+            <nav class="navigation">
+                <a href="#biographie__id" class="navigation__list">Biographie</a>
+                <a href="#oeuvres__id" class="navigation__list">Oeuvres</a>
+                <a href="#imagesLucky" class="navigation__list">Images</a>
+                <a href="#citationLucky__id" class="navigation__list">Citations</a>
+                <a href="#formulaire__id" class="navigation__list">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Biographie -->
+    <main>
+        <section class="biographie border__bottom" id="biographie__id">
+            <div>
+                <div class="biographie__title">
+                    <h2>Biographie</h2>
+                    <p>Je suis un cow-boy solitaire qui sillonne le Far West, mon métier est de conduire des troupeaux
+                        de bétail d'une ville à une autre,
+                        mais je suis souvent appelé soit par certains de mes amis, soit directement par le gouvernement
+                        américain, pour rendre justice et pourchasser les hors-la-loi.</p>
+                </div>
+                <div>
+                    <ul class="biographie__list">
+                        <li class="biographie__item">1946 <br> Je suis creer par Morris</li>
+                        <li class="biographie__item">1951 <br> Parution de "Rodeo", mon premier album publié</li>
+                        <li class="biographie__item">1955 <br> Première apparition des Dalton dans "Les Cousins Dalton
+                        </li>
+                        <li class="biographie__item">1967 <br> René Goscinny devient le scenariste principal de ma vie
+                        </li>
+                        <li class="biographie__item">2009 <br> Sortie du film "Lucky Luke" réalisé par James Huth</li>
+                        <li class="biographie__item">2021 <br> La série compte 80 albums publiés</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="/images/il-tire-plus-vite-que-son-ombre.jpg" class="imageBiographie"
+                    alt="luckyluke en gros plan">
+            </div>
+        </section>
+
+
+        <!-- Oeuvre liste-->
+
+        <section class="oeuvres border__bottom" id="oeuvres__id">
+            <div class="oeuvres__title">
+                <h2>Oeuvres</h2>
+                <p>Voici quelques-unes de mes réussites !</p>
+            </div>
+            <div>
+                <ul class="oeuvres__list">
+                    <li class="oeuvres__item">La Diligence (1968) : Un classique où Lucky Luke doit protéger une
+                        diligence remplie de passagers</li>
+                    <li class="oeuvres__item">Le Juge (1959) : Lucky Luke aide un juge honnête à faire régner la justice
+                        dans une ville corrompue.</li>
+                    <li class="oeuvres__item">Billy the Kid (1962) : Une aventure avec le célèbre hors-la-loi Billy the
+                        Kid.</li>
+                    <li class="oeuvres__item">Ma Dalton (1971) : Les frères Dalton tentent de se réhabiliter avec l'aide
+                        de Lucky Luke.</li>
+                    <li class="oeuvres__item">Calamity Jane (1967) : Lucky Luke rencontre la célèbre chasseuse de primes
+                        Calamity Jane.</li>
+                    <li class="oeuvres__item">L'escorte (1971) : Lucky Luke est chargé d'escorter un dangereux criminel.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Images -->
+
+        <section id="imagesLucky" class="images border__bottom">
+            <div class="images__header">
+                <h2>Images</h2>
+            </div>
+            <div class="images__header__text">
+                <p>Mon look est emblématique et facilement reconnaissable. </p>
+            </div>
+            <div class="images__list">
+                <img src="/images/JJsurLL.jpg" class="images__item" alt="Jolly Jumper sur le dos de Lucky Luke"
+                    onclick="start()">
+                <img src="/images/lucky-luke-les-personnages.jpg" class="images__item"
+                    alt="les personnages de l'univers de lUcky Luke" onclick="start()">
+                <img src="/images/Jolly.jpg" class="images__item" alt="Jolly Jumper tire la langue" onclick="start()">
+                <img src="/images/dalton.jpg" class="images__item" alt="Les daltons" onclick="start()">
+                <img src="/images/rire.jpg" class="images__item" alt="Mort de rire" onclick="start()">
+                <img src="/images/latetealenvers.jpg" class="images__item" alt="Luke tire la tete en" onclick="start()">
+            </div>
+        </section>
+
+
+        <!-- Citations -->
+
+        <section class="citations border__bottom" id="citationLucky__id">
+            <div>
+                <h3>Citations</h3>
+            </div>
+            <ul class="citations__list">
+                <li class="citations__item">"Ne teste jamais la profondeur de la rivière avec les deux pieds."</li>
+                <li class="citations__item">"Je préfère qu'on me vide les poches plutôt qu'on me remplisse de plomb !"
+                </li>
+                <li class="citations__item">"Ne t’accroupis jamais quand tu portes des éperons."</li>
+            </ul>
+        </section>
+
+
+        <!-- Secret -->
+
+        <div class="secret">
+            <button class="secret__button" onClick="myFunction()"> J'ai un secret caché ici!! </button>
+            <div id="myDiv"> Voici la recette du meilleur café de l'ouest :
+                Pour faire un bon café, on met une livre de café mouillé d'eau dans la cafetière et on fait bouillir
+                pendant une demi-heure.
+                Puis on y jette un fer à cheval. Si le fer à cheval ne flotte pas, on rajoute du café
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+
+        <section class="formulaire">
+            <div>
+                <h3>Tu as des dernieres volontes cow-boy...Ecris-moi</h3>
+            </div>
+            <div>
+                <form class="formulaire__form" id="formulaire__id">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" class="formulaire__item" placeholder="Nom" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" class="formulaire__item" placeholder="E-mail" required>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="5" class="formulaire__item" placeholder="Ton message"
+                        required></textarea>
+                    <button id="button__id" class="button">Envoyer</button>
+                </form>
+            </div>
+        </section>
+        <a href="#header">Haut de page</a>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Lucky Luke corporation. Tous droits réservés.</p>
+    </footer>
+
 </body>
+
 </html>

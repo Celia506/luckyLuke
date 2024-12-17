@@ -1,0 +1,420 @@
+
+@font-face { font-family: 'LuckyLuke'; src: url('/fonts/Lucky\ Luke.ttf') format('truetype');
+}
+:root{
+    --policeTitre: 'LuckyLuke';
+    --policeParagraphe: "Overlock";
+    --letterSize: 19px;
+    --couleurFond: rgb(245, 242, 240);
+    --radius: 16px;
+    --color: rgb(238, 202, 159);
+}
+
+html{
+    width: 100%;
+    background-image: url(/images/background2.jpg);
+}
+
+body{
+    background-color: var(--couleurFond);
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    flex-wrap: wrap;
+    font-family: var(--policeParagraphe);
+    font-size: var(--letterSize);
+    border: solid 0.5px;
+    padding: 2rem;
+}
+
+
+/* Pour tous les h2 */
+h2{
+    font-family: var(--policeTitre);
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+
+/* Pour tous les h3 */
+h3{
+    font-family: var(--policeTitre);
+    font-weight: lighter;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Pour les ligne en bas de scetion */
+.border__bottom{
+    border-bottom: solid 0.5px;
+}
+
+
+
+
+/* Header  */
+
+.header__title{
+    font-family: var(--policeTitre);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem;   */
+}
+.header__image{
+    background-color: rgb(207, 151, 83);
+    width: 10rem;
+    height: auto;
+    border: solid;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 90%;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    margin: 1rem;
+}
+.header__image {
+    animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-50px);}
+    60% {transform: translateY(-25px);}
+}
+header h1{
+    font-family: var(--policeTitre);
+    font-size: 70px;
+    font-weight: 100;
+}
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+} 
+.navigation{
+    display: flex;
+}
+.navigation__list{
+    color: rgb(189, 135, 70);
+    font-family:var(--policeParagraphe);
+    font-size: 24px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+/* Section Biographie */
+
+.biographie{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.biographie__title{
+    font-size: var(--letterSize);
+}
+.biographie__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.biographie__item{
+    font-size: var(--letterSize);
+    border-radius:var(--radius);
+    background-color: var(--color);
+    padding: 0.2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border: solid 0.5px gray;
+    width: 10rem;
+    box-shadow: 10px 5px 5px rgb(180, 172, 172);
+}
+.imageBiographie{
+    display: flex;
+    align-items: flex-end;
+    width: auto;
+    height: 14rem;
+    margin: 1rem  0 0 1rem;
+    border: solid 0.5px gray;
+    border-radius: var(--radius);
+    box-shadow: 10px 5px 5px rgb(180, 172, 172);
+
+}
+
+
+/* Section Oeuvres */
+
+.oeuvres{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+.oeuvres__title{
+    font-size: var(--letterSize);
+    display: flex;
+    flex-direction: column;
+}
+.oeuvres__list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    
+}
+.oeuvres__item{
+    font-size: var(--letterSize);
+    background-color: var(--color);
+    border: solid 0.5px gray;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    width: 17rem;
+    border-radius:var(--radius);
+    box-shadow: 10px 5px 5px rgb(180, 172, 172);
+}
+
+
+
+
+/* Section images */
+
+.images{
+    padding: 1.5rem 0;
+}    
+.images__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+.images__item{
+    height: auto;
+    width: 25%;
+    border-radius: var(--radius);
+    transition: 0.6s ease-in-out;
+    box-shadow: 5px 2px 2px rgb(87, 41, 20);
+}
+.images__item:hover{
+    transform: scale(1.5);
+}
+
+
+
+/* Section citations */
+
+.citations{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+}
+.citations__item{
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin: 0.1rem;
+}
+
+
+
+/* Secret box */
+
+#myDiv{
+    padding: 20px 0;
+    border-radius: var(--radius);
+    text-align: center;
+    background-color: rgb(209, 180, 163);
+    color: rgb(49, 33, 15);
+    /* margin-top: 20px; */
+    visibility: hidden;
+    margin: 2rem;
+    font-size: 20px;
+}
+.secret{
+    /* background-color: rgb(25, 150, 57); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secret__button:hover{
+    transform:rotate(5deg);
+}
+.secret__button{
+    background-color: rgb(172, 78, 78);
+    font-size: 20px;
+    font-family: var(--policeParagraphe);
+    /* font-weight: 200; */
+    width: 22rem;
+    display: flex; 
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgb(180, 172, 172);
+}
+
+
+/* formulaire de contact */
+.formulaire{
+    background-image: url(/images/backgroundorange.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: var(--radius);
+    /* justify-content: center; */
+
+}
+.formulaire__form{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    align-items: center;
+
+}
+.formulaire__item{
+    border-radius: var(--radius);
+    max-width: 30rem;
+    /* height: 2rem; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.formulaire input{
+    /* background-color: aqua; */
+    font-family: var(--policeParagraphe);
+    font-size: var(--policeParagraphe);
+    height: 2rem;
+    margin: 0.2rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid 0.1rem;
+}
+
+.formulaire textarea{
+    font-family: var(--policeParagraphe);
+    font-size: var(--policeParagraphe);
+    width: 50rem;
+    display: flex;
+    text-align: center;
+    border: solid 0.1rem;
+}
+
+.formulaire__form button{
+    background-color: rgb(243, 210, 168);
+    /* border-radius: var(--radius); */
+    height: 2rem;
+    width: 19rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--letterSize);
+    box-shadow: 10px 5px 5px rgb(87, 41, 20);
+}
+
+#footer{    
+    height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--letterSize);
+}
+
+    /* Pour les tablettes paysage*/ 
+
+@media (max-width: 1024px) { 
+    body{
+        width: 80%;
+    }
+    .biographie{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagesLucky__item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* Pour les tablettes*/
+@media (max-width: 768px) { 
+
+    body{
+        width: 100%;
+    }
+    .navigation__list{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .biographie{
+        display: flex;    
+        justify-content: center;    
+    }
+    .biographie__text{
+        font-size: 30px;
+    }
+    .biographie__item{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        font-size: 30px;
+    }
+    .oeuvres__title{
+        font-size: 30px;
+    }
+    .oeuvres__item{
+        width: 90%;
+        font-size: 30px;
+    }
+    .images__text{
+        font-size: 30px;
+    }
+    .imageBiographie{
+        width: 35rem;
+        height: auto;
+    }
+    .secret{
+        font-size: 20px;
+        margin: 0.1rem;
+    }
+
+}
+
+    /* Pour les mobiles */ 
+@media (max-width: 480px) {
+}
