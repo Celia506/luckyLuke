@@ -109,6 +109,7 @@ header h1{
     font-size: 24px;
     justify-content: center;
     padding: 1rem;
+    transition: all 0.5s ease-out;
 }
 .navigation__list:hover{
     color: rgb(29, 24, 13);
@@ -221,7 +222,7 @@ header h1{
     box-shadow: 5px 2px 2px rgb(87, 41, 20);
 }
 .images__item:hover{
-    transform: scale(2);
+    transform: scale(1.5);
 }
 
 
