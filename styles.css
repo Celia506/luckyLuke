@@ -110,6 +110,9 @@ header h1{
     justify-content: center;
     padding: 1rem;
 }
+.navigation__list:hover{
+    color: rgb(29, 24, 13);
+}
 
 
 
@@ -214,11 +217,11 @@ header h1{
     height: auto;
     width: 25%;
     border-radius: var(--radius);
-    transition: 0.6s ease-in-out;
+    transition: 0.8s ease-in-out;
     box-shadow: 5px 2px 2px rgb(87, 41, 20);
 }
 .images__item:hover{
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 
