@@ -1,5 +1,5 @@
 
-@font-face { font-family: 'LuckyLuke'; src: url('/fonts/Lucky\ Luke.ttf') format('truetype');
+@font-face { font-family: 'LuckyLuke'; src: url('./fonts/Lucky\ Luke.ttf') format('truetype');
 }
 :root{
     --policeTitre: 'LuckyLuke';
@@ -30,13 +30,12 @@ body{
 }
 
 
-/* Pour tous les h2 */
+/*  / Pour tous les h2  /*/
 h2{
     font-family: var(--policeTitre);
     font-weight: lighter;
     font-size: 2rem;
 }
-
 
 /* Pour tous les h3 */
 h3{
@@ -48,12 +47,13 @@ h3{
 }
 
 
-/* Pour les ligne en bas de chaque section */
+/* /// Pour les ligne en bas de chaque section /// */
 .border__bottom{
     border-bottom: solid 0.5px;
 }
 
-/* animation image header */
+
+/* *** animation image header *** */
 .header__image {
     animation: bounce 2s ease-out infinite;
 }
@@ -64,7 +64,8 @@ h3{
 }
 
 
-/* Header  */
+
+/* *** Header *** */
 
 .header__title{
     font-family: var(--policeTitre);
@@ -83,7 +84,6 @@ header h1{
 h1:hover{
     color: var(--colorFonce);
 }
-
 .header__image{
     background-color: var(--colorFonce);
     width: 10rem;
@@ -93,7 +93,6 @@ h1:hover{
     margin: 1rem;
     border-radius: 90%;
 }
-
 figure{
     display: flex;
     flex-direction: column;
@@ -101,8 +100,6 @@ figure{
     font-size: 25px;
     margin: 1rem;
 }
-
-
 .header__nav{
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +122,9 @@ figure{
     color: rgb(29, 24, 13);
 }
 
-/* Section Biographie */
+
+
+/* // Section Biographie // */
 
 .biographie{
     display: flex;
@@ -167,11 +166,11 @@ figure{
     border: solid 0.5px gray;
     border-radius: var(--radius);
     box-shadow: 10px 5px 5px var(--colorShadow);
-
 }
 
 
-/* Section Oeuvres */
+
+/* // Section Oeuvres  // */
 
 .oeuvres{
     display: flex;
@@ -209,8 +208,7 @@ figure{
 
 
 
-
-/* Section images */
+/* /// Section images /// */
 
 .images{
     padding: 1.5rem 0;
@@ -235,7 +233,7 @@ figure{
 
 
 
-/* Section citations */
+/*// Section Citations //*/
 
 .citations{
     display: flex;
@@ -257,7 +255,7 @@ figure{
 
 
 
-/* Secret box */
+/* // Secret box // */
 
 #myDiv{
     padding: 1rem 0;
@@ -288,7 +286,9 @@ figure{
 }
 
 
-/* formulaire de contact */
+
+/* // formulaire de contact //*/
+
 .formulaire{
     background-image: url(./images/backgroundorange.jpg);
     background-repeat: no-repeat;
@@ -344,6 +344,7 @@ figure{
     cursor: pointer;
 }
 
+/* /// Footer /// */
 #footer{    
     height: 3rem;
     margin-top: 2rem;
@@ -352,20 +353,31 @@ figure{
     align-items: center;
     font-size: var(--letterSize);
 }
+.hautPage{
+    margin: 1rem ;
+    padding: 0.5rem;
+}
+.hautPage a{
+    color: rgb(29, 24, 13);
+
+}
+.hautPage a:hover{
+    color: var(--colorFonce);
+    transition: all 0.5s;
+}
 
 
 
-/* Media Queries */
+
+/* ////////Media Queries///////// */
 
 /* Pour les telephone (jusqu'à 480px) */ 
-
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
     html{
         width: 100%;
         background-image: none;
     }
     body{
-        /* background-color: blue; */
         width: 95%;
     }
     header h1{
@@ -382,7 +394,6 @@ figure{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /* justify-content: center; */
     }
     .biographie__header{
         display: flex;
@@ -412,14 +423,12 @@ figure{
         font-size: 19px;
     }
     .secret{
-        background-image: url(./images/background.jpeg);
+        background-image: url(./images/backgroundpetit.jpeg);
         background-repeat: no-repeat;
-        background-position: 90%;
-        background-size: 50%;
+        background-position: 60%;
+        background-size: 20%;
     }
     .formulaire{
-        background-image: none;
-        background-color: var(--colorFonce);
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -438,11 +447,7 @@ figure{
     }
 }
 
-
-
-
 /* Pour les telephone en mode paysage ( de 481 px à 768 px)*/
-
 @media (min-width: 481px) and (max-width: 768px) { 
     html{
         background-image: none;
@@ -452,7 +457,7 @@ figure{
         background-color: rgb(252, 250, 249);
     }
     header{
-        background-image: url(/images/background.jpeg);
+        background-image: url(./images/background.jpeg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -507,9 +512,7 @@ figure{
     }
 }
 
-
 /* Pour les tablettes (de 769 px à 1024 px)*/ 
-
 @media (min-width: 769px) and (max-width: 1024px) { 
     html{
         background-image: none;
@@ -520,7 +523,7 @@ figure{
         background-color: rgb(250, 250, 250);
     }
     header{
-            background-image: url(/images/background.jpeg);
+            background-image: url(./images/background.jpeg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -565,8 +568,8 @@ figure{
     .secret{
         background-image: url(./images/background.jpeg);
         background-repeat: no-repeat;
-        background-position: 90%;
-        background-size: 20%;
+        background-position: 80%;
+        background-size: 18%;
     }
 }
 
