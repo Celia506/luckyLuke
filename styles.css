@@ -1,6 +1,7 @@
 
 @font-face { font-family: 'LuckyLuke'; src: url('./fonts/Lucky\ Luke.ttf') format('truetype');
 }
+
 :root{
     --policeTitre: 'LuckyLuke';
     --policeParagraphe: "Overlock";
@@ -24,7 +25,6 @@ body{
     font-size: var(--letterSize);
     width: 75%;
     margin: auto;
-    flex-wrap: wrap;
     border: solid 0.5px;
     padding: 2rem;
 }
@@ -67,10 +67,6 @@ h1:hover{
     to {transform: rotate(8deg);}
 }
 
-.images__item:hover{
-        transform: scale(1.3) rotate(5deg);
-}
-
 .navigation__list:hover{
     color: rgb(29, 24, 13);
 }
@@ -86,7 +82,7 @@ h1:hover{
 
 
 
-/* *** Header *** */
+/* ****** Header ******* */
 
 .header__title{
     font-family: var(--policeTitre);
@@ -94,8 +90,8 @@ h1:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 header h1{
     font-family: var(--policeTitre);
     font-size: 4rem;
@@ -112,6 +108,7 @@ header h1{
     margin: 1rem;
     border-radius: 90%;
 }
+
 figure{
     display: flex;
     flex-direction: column;
@@ -119,16 +116,18 @@ figure{
     font-size: 25px;
     margin: 1rem;
 }
+
 .header__nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 3rem;
 } 
+
 .navigation{
     display: flex;
-
 }
+
 .navigation__list{
     color: var(--colorFonce);
     font-family:var(--policeParagraphe);
@@ -140,23 +139,25 @@ figure{
 
 
 
-/* // Section Biographie // */
+/* //// Section Biographie //// */
 
 .biographie{
     display: flex;
     align-items: center;
     padding: 1.5rem 0;
 }
+
 .biographie__title{
     font-size: var(--letterSize);
 }
+
 .biographie__list ul{
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-start; */
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
 .biographie__item{
     font-size: var(--letterSize);
     border-radius:var(--radius);
@@ -173,6 +174,7 @@ figure{
     width: 12rem;
     box-shadow: 10px 5px 5px var(--colorShadow);
 }
+
 .imageBiographie{
     display: flex;
     align-items: flex-end;
@@ -186,25 +188,27 @@ figure{
 
 
 
-/* // Section Oeuvres  // */
+/* ///// Section Oeuvres  ///// */
 
 .oeuvres{
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
 }
+
 .oeuvres__title{
     font-size: var(--letterSize);
     display: flex;
     flex-direction: column;
 }
+
 .oeuvres__list{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    
+    gap: 0.5rem; 
 }
+
 .oeuvres__item{
     font-size: var(--letterSize);
     background-color: var(--colorClair);
@@ -224,17 +228,19 @@ figure{
 
 
 
-/* /// Section images /// */
+/* ///// Section images ///// */
 
 .images{
     padding: 1.5rem 0;
-}    
+}   
+
 .images__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0.5rem;
 }
+
 .images__item{
     height: auto;
     width: 20rem;
@@ -242,18 +248,22 @@ figure{
     border-radius: var(--radius);
     box-shadow: 5px 2px 2px var(--colorShadow);
     border: solid 0.5px gray;
-    transition: 0.8s ease-in-out;
+    transition: 0.8s ;
+}
+
+.images__item:hover{
+    transform: scale(1.3) rotate(5deg);
 }
 
 
-
-/*// Section Citations //*/
+/*//// Section Citations ////*/
 
 .citations{
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
 }
+
 .citations h2{
     font-family: var(--policeTitre);
     font-weight: lighter;
@@ -277,7 +287,7 @@ figure{
 
 
 
-/* // Secret box // */
+/* //// Secret box ///// */
 
 #myDiv{
     padding: 1rem 0;
@@ -288,6 +298,7 @@ figure{
     margin: 2rem;
     font-size: 1.3rem;
 }
+
 .secret{
     display: flex;
     align-items: center;
@@ -307,11 +318,11 @@ figure{
 
 
 
-/* // formulaire de contact //*/
+/* //// formulaire de contact ///// */
 
 
 .formulaire{
-    background-image: url(./images/backgroundorange.jpg);
+    background-image: url(./images/lucky_luke_sunset.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -321,6 +332,7 @@ figure{
     border-radius: var(--radius);
     box-shadow: 5px 5px 2px var(--colorShadow)
 }
+
 .formulaire h3{
     font-family: var(--policeParagraphe);
     font-weight: 500;
@@ -328,20 +340,25 @@ figure{
     display: flex;
     justify-content: center;
 }
+
 .formulaire__form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .formulaire__item{
+    background-color: var(--fondColor);
     border-radius: var(--radius);
     max-width: 30rem;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .formulaire input{
     font-family: var(--policeParagraphe);
     font-size: var(--letterSize);
+    color: rgb(122, 84, 27);
     height: 2rem;
     margin: 0.3rem;
     width: 50rem;
@@ -349,11 +366,13 @@ figure{
     justify-content: center;
     text-align: center;
     border: solid 0.5px gray;
-
 }
+
 .formulaire textarea{
     font-family: var(--policeParagraphe);
     font-size: var(--letterSize);
+    background-color: var(--fondColor);
+    color: rgb(122, 84, 27);
     width: 50rem;
     display: flex;
     text-align: center;
@@ -363,11 +382,12 @@ figure{
 }
 
 .formulaire__form button{
-    background-color: var(--colorClair);
+    background-color:var(--fondColor);
     font-family: var(--policeParagraphe);
     font-size: var(--letterSize);
     border-radius: var(--radius);
     border: solid 0.5px gray;
+    color: rgb(122, 84, 27);
     height: 2rem;
     width: 19rem;
     margin: 2rem;
@@ -377,35 +397,33 @@ figure{
     transition: 0.3s ease-in-out;
 }
 
-
-/* /// Footer /// */
-#footer{    
-    height: 3rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--letterSize);
-    font-family: var(--policeParagraphe);
-}
 .hautPage{
     margin: 1rem ;
     padding: 0.5rem;
 }
 .hautPage a{
     color: rgb(29, 24, 13);
-
 }
+
 .hautPage a:hover{
     color: var(--colorFonce);
     transition: all 0.5s;
 }
 
 
+/* ////// Footer /////// */
+
+#footer{  
+    background-color: var(--colorFonce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--letterSize);
+    font-family: var(--policeParagraphe);
+}
 
 
-/* ////////Media Queries///////// */
-
+/* //////////////////Media Queries///////////////////////// */
 /* Pour les telephone (jusqu'à 480px) */ 
 @media (max-width: 480px) { 
     html{
@@ -415,6 +433,16 @@ figure{
     body{
         width: 95%;
         margin: auto;
+    }
+    .header__title{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    figure{
+        display: flex;
+        justify-self: start;
+        margin: 0 3rem;
     }
     header h1{
         font-size: 3rem;
@@ -434,6 +462,7 @@ figure{
     .biographie__header{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
     .biographie p{
         font-size: 19px;  
@@ -468,27 +497,33 @@ figure{
         flex-direction: column;
         margin: 0;
         padding: 0;
-
     }
     .secret{
-        background-image: url(./images/backgroundpetit.jpeg);
+        background-image: url(./images/background.jpeg);
         background-repeat: no-repeat;
-        background-position: 60%;
-        background-size: 20%;
-    }
+        background-position: center;
+        background-size: contain;
+    } 
     .formulaire{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
     }
     .formulaire input{
-        width: 20rem;
+        max-width: 18rem;
     }
     .formulaire textarea{
-        width: 20rem;
+        max-width: 18rem;
+
+    }
+    .formulaire{
+        background-image: url(./images/backgroundorange.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
     .formulaire button {
-        width: 20rem;
+        max-width: 18rem;
     }
     h3{
         font-size: 20px;
@@ -545,7 +580,7 @@ figure{
         font-size: 20px;
     }
     .citations__item{
-        font-size: 19px;
+        font-size: 18px;
     }
     .images p{
         font-size: 19px;
@@ -553,16 +588,22 @@ figure{
     .secret{
         font-size: 18px;
         margin: 0.1rem;
-        background-image: url("./images/backgroundpetit.jpeg");
+        background-image: url(./images/lucky-luke.png);
         background-repeat: no-repeat;
         background-position: 90%;
-        background-size: 10%;
+        background-size: 20%;
     }
     .formulaire input{
         width: 20rem;
     }
     .formulaire textarea{
         width: 20rem;
+    }
+    .formulaire{
+        background-image: url(./images/backgroundorange.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -620,14 +661,16 @@ figure{
         transform: scale(1.3);
     }
     .secret{
-        background-image: url(./images/background.jpeg);
+        background-image: url(./images/latetealenvers.jpg);
         background-repeat: no-repeat;
-        background-position: 80%;
-        background-size: 18%;
+        background-position: 95%;
+        background-size: 13%;
+    }
+    .formulaire{
+        background-image: url(./images/backgroundorange.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
-
-
-
-
 

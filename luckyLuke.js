@@ -7,7 +7,3 @@ var x = document.getElementById("myDiv");
 }
 }
 
-var t = document.getElementById('images__LL');
-function start() {
-    t.style.display = "block";
-}
