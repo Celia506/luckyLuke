@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="luckyLuke.js"></script>
+    <script src="./luckyLuke.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
         <div class="header__title">
             <h1>Lucky Luke</h1>
             <figure>
-                <img src="./images/portrait.jpg" class="header__image" alt="profil de luckyluke">
+                <img src="./images/portrait.jpg" class="header__image" alt="profil de Lucky Luke">
                 <figcaption>L'homme le plus rapide de l'ouest...!</figcaption>
             </figure>
         </div>
@@ -51,17 +51,17 @@
                 </div>
                 <div class="biographie__list">
                     <ul>
-                        <li class="biographie__item">1946 <br> Je suis creer par Morris</li>
+                        <li class="biographie__item">1946 <br> Je suis créé par Morris</li>
                         <li class="biographie__item">1951 <br> Parution de "Rodeo", mon premier album publié</li>
-                        <li class="biographie__item">1955 <br> Première apparition des Dalton dans "Les Cousins Dalton</li>
-                        <li class="biographie__item">1967 <br> René Goscinny devient le scenariste principal de ma vie</li>
+                        <li class="biographie__item">1955 <br> Première apparition des Dalton dans "Les Cousins Dalton"</li>
+                        <li class="biographie__item">1983 <br> J'ai arrêté de fumer. Maintenant, c'est l'air pur et les chevauchées</li>
                         <li class="biographie__item">2009 <br> Sortie du film "Lucky Luke" réalisé par James Huth</li>
                         <li class="biographie__item">2021 <br> La série compte 80 albums publiés</li>
                     </ul>
                 </div>
             </div>
             <div>
-                <img src="./images/plusvitequesonombre.jpg" class="imageBiographie" alt="luckyluke en gros plan">
+                <img src="./images/plusvitequesonombre.jpg" class="imageBiographie" alt="Lucky Luke en gros plan">
             </div>
         </section>
 
@@ -104,7 +104,7 @@
                     <img src="./images/Jolly.jpg" class="images__item" alt="Jolly Jumper tire la langue">
                     <img src="./images/dalton.jpg" class="images__item" alt="Les daltons">
                     <img src="./images/rire.jpg" class="images__item" alt="Mort de rire">
-                    <img src="./images/lucky-luke-kalamity.webp" class="images__item" alt="Luke et Calamity Jane">
+                    <img src="./images/lucky-luke-kalamity.jpg" class="images__item" alt="Luke et Calamity Jane">
                 </div>
             </div>
         </section>
@@ -139,11 +139,11 @@
             <div>
                 <form class="formulaire__form" id="formulaire__id">
                     <label for="name"></label>
-                    <input type="text" id="name" name="name" class="formulaire__item" placeholder="Nom" required>
+                    <input type="text" id="name" name="name" class="formulaire__item" placeholder="Nom">
                     <label for="email"></label>
-                    <input type="email" id="email" name="email" class="formulaire__item" placeholder="E-mail" required>
+                    <input type="email" id="email" name="email" class="formulaire__item" placeholder="E-mail">
                     <label for="message"></label>
-                    <textarea id="message" name="message" rows="3" class="formulaire__item" placeholder="Ton message" required></textarea>
+                    <textarea id="message" name="message" rows="3" class="formulaire__item" placeholder="Ton message"></textarea>
                     <button id="button__id" class="button">Envoyer</button>
                 </form>
             </div>
@@ -157,6 +157,7 @@
     <footer id="footer">
         <p>&copy; 2024 Lucky Luke corporation. Tous droits réservés.</p>
     </footer>
-    
 </body>
 </html>
+
+
