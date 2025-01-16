@@ -9,7 +9,7 @@
     --policeParagraphe: "Overlock";
     --letterSize: 1.3rem;
     --radius: 1rem;
-    --fondColor: rgb(245, 242, 240);
+    --fondColor: rgb(243, 231, 222);
     --colorClair: rgb(241, 207, 165);
     --colorFonce:  rgb(207, 151, 83);
     --colorShadow: rgb(180, 172, 172);
@@ -172,16 +172,14 @@ figure{
     font-size: var(--letterSize);
     border-radius:var(--radius);
     background-color: var(--colorClair);
-    padding: 0.2rem;
+    padding: 0.5rem;
     list-style: none;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     border: solid 0.5px gray;
-    width: 12rem;
+    width: 14rem;
     box-shadow: 2px 5px 2px var(--colorShadow);
 }
 
@@ -216,7 +214,8 @@ figure{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem; 
+    flex-direction: row;
+    gap: 0.5rem;
 }
 
 .oeuvres__item{
@@ -224,14 +223,12 @@ figure{
     background-color: var(--colorClair);
     border: solid 0.5px gray;
     list-style: none;
-    display: flex;
-    flex-direction:row;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    padding: 0.5rem;
-    width: 17rem;
+    padding: 0.9rem;
+    width: 19rem;
     border-radius:var(--radius);
     box-shadow: 2px 5px 2px var(--colorShadow);
 }
@@ -499,21 +496,27 @@ figure{
     .biographie__list{
         display: flex;
         flex-direction: column;
+        width: 20rem;
+    }
+    .biographie__list ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .biographie__item{
-        width: 18rem;
-        height: auto;
+        width: auto;
     }
     .imageBiographie{
         width: 18rem;
         height: auto;
+        margin: 2rem;
+    }
+    .oeuvres__item{
+        width: auto;
+        font-size: 20px;
     }
     .oeuvres p{
         font-size: 20px;
-    }
-    .oeuvres__item{
-        width: 18rem;
-        height: auto;
     }
     .images p{
         font-size: 20px;
@@ -588,8 +591,6 @@ figure{
         font-size: 1.4rem;
     }
     .biographie__item{
-        display: flex;
-        flex-direction: column;
         width: 90%;
         font-size: 20px;
     }
@@ -656,15 +657,6 @@ figure{
         flex-direction: column;
     }
     .biographie__list ul{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .biographie__item{
-        display: flex;
-        flex-wrap: wrap ;
-        width: 30%;
-    }
-    .oeuvres__list{
         display: flex;
         flex-wrap: wrap;
     }
